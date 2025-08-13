@@ -68,7 +68,9 @@ def close_overlays(driver):
 
 # --- Main scraping loop ---
 # for idx, doc in enumerate(source_collection.find().skip(200).limit(250)):  # Adjust skip/limit
-for idx, doc in enumerate(source_collection.find().skip(250).limit(280)):  # Adjust skip/limit
+# for idx, doc in enumerate(source_collection.find().skip(250).limit(280)):  # Adjust skip/limit
+# for idx, doc in enumerate(source_collection.find().skip(280).limit(300)):  # Adjust skip/limit
+for idx, doc in enumerate(source_collection.find().skip(300).limit(330)):  # Adjust skip/limit
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     print("Index -> ", idx)
 
